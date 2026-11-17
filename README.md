@@ -11,7 +11,7 @@ Repositório da **Equipe 14** referente à Atividade Complementar da Unidade 2.
 3. **Questão 03.2 (Tópico 03 - Interpolação Polinomial):** Estimativa da queda de tensão `V` para `i = 1.15 A` usando Interpolação de Lagrange e de Newton (2º, 3º e 4º graus).
 4. **Questão 04.2 (Tópico 04 - Integração Numérica):** Cálculo da área da superfície de um rio no intervalo `[0, 40]` usando as Regras do Trapézio Repetida e de Simpson 1/3 Repetida.
 
-## Divisão das Partes no Código (`main.py`)
+## Divisão das Partes no Código
 
 | Integrante | Parte Responsável | O que deve implementar |
 | :--- | :--- | :--- |
@@ -19,10 +19,23 @@ Repositório da **Equipe 14** referente à Atividade Complementar da Unidade 2.
 | **Júlio César Mendes do Nascimento** | **2ª PARTE:** Integração Numérica (`04.2`) + Menu Principal | Funções `regra_trapezio_repetida`, `regra_simpson_repetida`, validação de entradas e menus das Questões `01.3`, `02.3` e `04.2` |
 | **Eduardo dos Santos Ferreira Sousa** | **3ª PARTE:** Interpolação Polinomial (`03.2` Completa) | Funções `interpolacao_lagrange`, `interpolacao_newton` e a tela interativa `menu_questao_03_2()` da Opção 3 |
 
+## Organização dos arquivos
+
+| Arquivo | Conteúdo |
+| :--- | :--- |
+| `main.py` | Ponto de entrada e controle do menu principal |
+| `dados.py` | Dados oficiais das quatro questões |
+| `sistemas_lineares.py` | Eliminação de Gauss e Gauss-Seidel |
+| `interpolacao.py` | Seleção de pontos, Lagrange e Newton |
+| `integracao.py` | Trapézio e Simpson 1/3 repetidos |
+| `menus.py` | Leitura de entradas, submenus e apresentação do menu principal |
+
+As funções foram transferidas integralmente para os arquivos correspondentes. Os imports conectam os módulos. Os nomes das funções também ficam acessíveis pelo módulo `main` para compatibilidade com chamadas anteriores.
+
 ## Como começar a programar
-1. Crie a sua branch (ou abra o Codespace) e programe apenas dentro do bloco da sua parte no `main.py`.
+1. Crie a sua branch (ou abra o Codespace) e trabalhe no arquivo correspondente à sua parte.
 2. Cada parte é independente: a 3ª Parte (Questão `03.2`) é chamada diretamente quando o usuário escolhe a Opção 3 no menu.
 3. Para testar no terminal, execute:
 ```bash
 python main.py
-
+```
