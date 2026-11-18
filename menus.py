@@ -1,3 +1,4 @@
+from enunciados import MINAS, CIRCUITO, RESISTOR, RIO
 from dados import (
     dados_questao_01_3,
     dados_questao_02_3,
@@ -58,7 +59,9 @@ def menu_questao_01_3():
 
     try:
         if opcao == "1":
+            print("\n" + MINAS + "\n")
             A, b = dados_questao_01_3()
+            print("Solução:")
         elif opcao == "2":
             A, b = ler_sistema()
         else:
@@ -90,7 +93,9 @@ def menu_questao_02_3():
 
     try:
         if opcao == "1":
+            print("\n" + CIRCUITO + "\n")
             A, b, tol = dados_questao_02_3()
+            print("Solução:")
         elif opcao == "2":
             A, b = ler_sistema()
             tol = float(input("Digite a tolerância (por exemplo, 0.0001): "))
@@ -127,7 +132,9 @@ def menu_questao_04_2():
     if opcao == "0":
         return
     elif opcao == "1":
+        print("\n" + RIO + "\n")
         x, m1, m2, y, h = dados_questao_04_2()
+        print("Solução:")
     elif opcao == "2":
         # O passo h é a distância entre dois pontos consecutivos da tabela.
         try:
@@ -171,7 +178,9 @@ def menu_questao_03_2():
 
     try:
         if escolha_inicial == "1":
+            print("\n" + RESISTOR + "\n")
             lista_x, lista_y, x_alvo = dados_questao_03_2()
+            print("Solução:")
             for grau in [2, 3, 4]:
                 x_base, y_base = selecionar_pontos_proximos(lista_x, lista_y, x_alvo, grau)
                 res_lag = interpolacao_lagrange(x_base, y_base, x_alvo)
