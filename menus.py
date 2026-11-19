@@ -253,7 +253,7 @@ def menu_questao_03_2():
 
 def exibir_menu():
     print("\n" + "=" * 60)
-    print("   PROJETO FINAL UNIDADE 2 - CÁLCULO NUMÉRICO (EQUIPE 14)")
+    print("MÉTODOS NUMÉRICOS APLICADOS")
     print("=" * 60)
     print("1 - Questão 01.3: Sistemas Lineares - Eliminação de Gauss (3 Minas)")
     print("2 - Questão 02.3: Sistemas Lineares - Gauss-Seidel (Circuito)")
