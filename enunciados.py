@@ -15,13 +15,14 @@ Quantos metros cúbicos devem ser extraídos de cada mina para atender à obra?"
 CIRCUITO = """Questão 02.3 — Correntes nas cinco malhas
 
 Um circuito elétrico tem cinco malhas. As correntes I1 a I5, medidas em
-ampères, estão relacionadas pelas seguintes equações:
+ampères, têm como referência o sentido horário para I1 e o sentido
+anti-horário para I2, I3, I4 e I5. O sistema para esses sentidos é:
 
-     9,5 I1 − 2,5 I2 − 2 I4             =  12
-    −2,5 I1 + 11 I2 − 3,5 I3 − 5 I5    = −16
-    −3,5 I2 + 15,5 I3 − 4 I5            =  14
-      −2 I1 + 7 I4 − 3 I5                =  10
-      −5 I2 − 4 I3 − 3 I4 + 12 I5       = −30
+     9,5 I1 + 2,5 I2 + 2 I4             =  12
+     2,5 I1 + 11 I2 − 3,5 I3 − 5 I5    =  16
+    −3,5 I2 + 15,5 I3 − 4 I5            = −14
+       2 I1 + 7 I4 − 3 I5                = −10
+      −5 I2 − 4 I3 − 3 I4 + 12 I5       =  30
 
 Qual é a corrente em cada malha?"""
 
